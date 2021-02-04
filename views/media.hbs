@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Files</title>
+</head>
+
+<body>
+  List of uploaded media files
+
+  <h4>Video files</h4>
+  <ul class="people_list">
+    {{#each videoFiles}}
+    <li><a href="media/{{id}}">{{filename}}</a></li>
+    {{/each}}
+  </ul>
+
+  <h4>Audio files</h4>
+  <ul class="people_list">
+    {{#each audioFiles}}
+    <li><a href="{{url}}">{{filename}}</a></li>
+    {{/each}}
+  </ul>
+
+  <br />
+  <a href="/">Back</a>
+  <br />
+
+</body>
+
+</html>
